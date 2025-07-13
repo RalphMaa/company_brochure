@@ -1,4 +1,4 @@
-# 🤎 Company Brochure Generator using OpenAI
+# Company Brochure Generator using OpenAI
 
 Generate professional brochures about any company using just its website URL and name — powered by OpenAI's GPT-4o-mini and Python. The brochure is available in both **English and French**.
 
