@@ -45,11 +45,13 @@ The brochure is generated in **English** and then automatically translated into 
 ## 📁 Folder Structure
 
 ```
-📆llm_brochure_generator/
- ├️ 📋 brochure_generator.ipynb       # Main notebook
- ├️ 📋 utils.py                        # Web scraping and helper functions (optional)
- ├️ 📄 .env                            # API key (not tracked)
- └️ 📄 README.md
+📦 llm_brochure_generator/
+ ├── .env                                       # API key (not tracked)
+ ├── README.md                                  # Project readme
+ └── week1/
+     └── community-contributions/
+         └── day5_challenge_exercise/
+             └── day5_translation_challenge.ipynb  # Main notebook
 ```
 
 ---
@@ -59,25 +61,48 @@ The brochure is generated in **English** and then automatically translated into 
 1. **Clone the repo:**
 
    ```bash
-   git clone https://github.com/<your-username>/llm_brochure_generator.git
+   git clone https://github.com/RalphMaa/llm_brochure_generator.git
    cd llm_brochure_generator
    ```
 
-2. **Install dependencies:**
+2. **Set up your environment:**
+
+   Create and activate a virtual environment (optional but recommended):
 
    ```bash
-   pip install -r requirements.txt
+   python -m venv venv
+   source venv/bin/activate  # on Windows use `venv\Scripts\activate`
    ```
 
-3. **Add your OpenAI API key to `.env`:**
+3. **Install required packages manually:**
+
+   Since there's no `requirements.txt`, install dependencies manually:
+
+   ```bash
+   pip install openai python-dotenv beautifulsoup4 requests
+   ```
+
+4. **Create your `.env` file with your OpenAI API key:**
+
+   ```bash
+   touch .env
+   ```
+
+   Inside the `.env` file, add the following line:
 
    ```env
-   OPENAI_API_KEY=sk-...
+   OPENAI_API_KEY=your-api-key-here
    ```
 
-4. **Run the notebook:**
+5. **Run the notebook:**
 
-   Launch `brochure_generator.ipynb` and input:
+   Open the following notebook in Jupyter:
+
+   ```
+   week1/community-contributions/day5_challenge_exercise/day5_translation_challenge.ipynb
+   ```
+
+   Inside the notebook, provide:
 
    * Company name
    * Website URL
