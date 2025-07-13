@@ -46,7 +46,6 @@ The brochure is generated in **English** and then automatically translated into 
 
 ```
 📦 llm_brochure_generator/
- ├── .env                                       # API key (not tracked)
  ├── README.md                                  # Project readme
  └── week1/
      └── community-contributions/
